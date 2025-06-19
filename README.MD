@@ -40,3 +40,24 @@ PHONE_NUMBER_ID=
 GOOGLE_SHEETS_ID=
 ASSISTANT_ID=
 OPENAI_API_KEY=
+
+---
+
+## Autenticación con Google Sheets API
+
+Para registrar los casos en Google Sheets, este proyecto utiliza una cuenta de servicio de Google Cloud. El acceso se realiza mediante un archivo JSON de credenciales, el cual no debe incluirse en el repositorio por motivos de seguridad. tener el archivo `datapath-ai-credenciales.json` con los siguientes datos:
+
+```datapath-ai-credenciales.json
+{
+  "type": ,
+  "project_id": ,
+  "private_key_id": ,
+  "private_key": ,
+  "client_id": ,
+  "auth_uri": ,
+  "token_uri": ,
+  "auth_provider_x509_cert_url": ,
+  "client_x509_cert_url": ,
+  "universe_domain": 
+}
+
