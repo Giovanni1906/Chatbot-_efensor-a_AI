@@ -1,0 +1,13 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: sservicio-streamlit-datapath-jorge-velasquez
+spec:
+  template:
+    spec:
+      containers:
+      ### IMPORTANT: Cambiar el nombre del repositorio, el proyecto del gcloud y la imagen POR NUEVAS VERSIONES (v#)
+        - image: us-central1-docker.pkg.dev/defu-ai-chatbot-v1/repo-chat-streamlit-defu/image-v11-streamlit-datapath:latest
+          env:
+          ports:
+            - containerPort: 4000

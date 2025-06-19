@@ -1,0 +1,9 @@
+substitutions:
+  _VERSION: "v11"
+    ##IMPORTANT: Cambiar el nombre del repositorio, el proyecto del gcloud y la imagen POR NUEVAS VERSIONES (v#) CAMBIAR TAMBIÉN EL service.yaml
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-f', 'Dockerfile.prod', '-t', 'us-central1-docker.pkg.dev/defu-ai-chatbot-v1/repo-chat-streamlit-defu/image-${_VERSION}-streamlit-datapath:latest', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/defu-ai-chatbot-v1/repo-chat-streamlit-defu/image-${_VERSION}-streamlit-datapath:latest']
+
