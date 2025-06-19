@@ -40,7 +40,7 @@ PHONE_NUMBER_ID=
 GOOGLE_SHEETS_ID=
 ASSISTANT_ID=
 OPENAI_API_KEY=
-
+```
 ---
 
 ## Autenticación con Google Sheets API
